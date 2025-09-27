@@ -1,0 +1,84 @@
+.giftcode-list-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 24px;
+}
+
+.giftcode-card {
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: all 0.25s ease;
+  border: 1px solid #eee;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
+  }
+
+  &::before {
+    content: '🎁';
+    font-size: 70px;
+    position: absolute;
+    right: -8px;
+    top: -10px;
+    opacity: 0.08;
+  }
+
+  .gift-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    text-transform: capitalize;
+  }
+
+  .gift-code {
+    font-size: 14px;
+    color: #34495e;
+    background: #ecf0f1;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .gift-coin {
+    font-size: 15px;
+    color: #e67e22;
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '💰';
+      margin-right: 6px;
+    }
+  }
+
+  .gift-expired {
+    font-size: 13px;
+    color: #7f8c8d;
+    font-style: italic;
+  }
+}
+
+.Nodata {
+  padding: 50px;
+  font-size: 17px;
+  color: #95a5a6;
+  text-align: center;
+
+  span {
+    display: inline-block;
+    background: #f0f3f5;
+    padding: 12px 18px;
+    border-radius: 12px;
+  }
+}
