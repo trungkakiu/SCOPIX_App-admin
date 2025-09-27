@@ -3,7 +3,7 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { AdminContext } from '../Context/AdminContext'
 
-const baseURL = 'http://localhost:3001/api'
+const baseURL = 'https://scopix-app-backend.onrender.com/api'
 
 const api = axios.create({
   baseURL: baseURL,

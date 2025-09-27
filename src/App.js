@@ -25,7 +25,7 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-    const socket = new WebSocket('ws://localhost:3001')
+    const socket = new WebSocket('ws://scopix-app-backend.onrender.com')
 
     socket.onopen = () => {
       console.log('🔌 WebSocket connected')
